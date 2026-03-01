@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DoubtClear - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <h2>DoubtClear Engineering Portal</h2>
+    <button onclick="logout()">Logout</button>
+</div>
+
+<div class="container">
+
+    <h2>Welcome <span id="displayUser"></span></h2>
+
+    <!-- LIVE DOUBT CLEARING SECTION -->
+    <div class="section">
+        <h3>Live Doubt Clearing Session</h3>
+        <div class="chat-box" id="chatBox"></div>
+        <input type="text" id="chatInput" placeholder="Type your doubt...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <!-- BOOK PORTFOLIO SECTION -->
+    <div class="section">
+        <h3>Engineering Subject Books</h3>
+
+        <div class="book-grid">
+            <div class="book">
+                <img src="images/Engineering Mathematics.jpg">
+                <p>Engineering Mathematics</p>
+            </div>
+
+            <div class="book">
+                <img src="images/Engineering physics.jpg">
+                <p>Engineering Physics</p>
+            </div>
+
+            <div class="book">
+                <img src="images/Data structures.jpg">
+                <p>Data Structures</p>
+            </div>
+
+            <div class="book">
+                <img src="images/Basic Electronics.jpg">
+                <p>Basic Electronics</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
